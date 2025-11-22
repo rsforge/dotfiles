@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = master
+[user]
+	name = River Chubb
+	email = Riversidechat@gmail.com
+[credential]
+	helper = store

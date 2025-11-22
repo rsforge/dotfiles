@@ -1,0 +1,29 @@
+[general]
+cpus = 12
+editor = "vim"
+doas = false
+language = "en-US"
+noconfirm = false
+
+[aur]
+build = "/home/riverwc/.cache/aura/builds"
+cache = "/home/riverwc/.cache/aura/cache"
+clones = "/home/riverwc/.cache/aura/packages"
+hashes = "/home/riverwc/.cache/aura/hashes"
+chroot = []
+ignores = []
+git = false
+hotedit = false
+shellcheck = false
+diff = false
+delmakedeps = false
+clean = false
+warn_unknowns = true
+nocheck = false
+skipdepcheck = false
+reverse = false
+
+[backups]
+snapshots = "/home/riverwc/.cache/aura/snapshots"
+automatic = true
+

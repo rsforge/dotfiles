@@ -1,0 +1,54 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+[╭─$hostname$username$directory$c$lua$git_branch$git_status](#a9b1d6)
+[╰─[](#7aa2f7) ](#a9b1d6)
+'''
+
+add_newline = false
+
+[os]
+format = "[─[$type](#9ece6a)](#a9b1d6)"
+disabled = false
+
+[hostname]
+ssh_only = false
+style = "fg:#9ece6a"
+ssh_symbol = ' '
+format = "[─[$ssh_symbol](#f7768e)[$hostname]($style)](#a9b1d6)"
+
+[username]
+style_user = "fg:#ff9e64"
+style_root = "fg:#f7768e"
+format = "[─[$user]($style)](#a9b1d6)"
+disabled = false
+show_always = true
+
+[directory]
+style = "fg:#7aa2f7"
+format = "[─[$path]($style)[$read_only]($read_only_style)](#a9b1d6)"
+read_only = ""
+read_only_style = "fg:#f7768e"
+truncation_symbol = "../"
+disabled = false
+
+[git_branch]
+style = "fg:#bb9af7"
+format = "[─[$symbol$branch$git_status$git_status]($style)](#a9b1d6)"
+symbol = " "
+
+[git_status]
+disabled = false
+style = "fg:#7dcfff"
+format = "[─[$all_status$ahead_behind]($style)](#a9b1d6)"
+
+[c]
+disabled = false
+detect_extensions = [ 'c', 'cpp', 'h', 'hpp' ]
+style = "fg:#9ece6a"
+format = "[─[$name $version]($style)](#a9b1d6)"
+
+[lua]
+disabled = false
+style = "fg:#9ece6a"
+format = "[─[lua $version]($style)](#a9b1d6)"
