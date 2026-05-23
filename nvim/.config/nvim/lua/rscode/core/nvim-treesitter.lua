@@ -20,9 +20,9 @@ end
 
 function M.config()
     local options = M.options()
-    local treesitter_config = require('nvim-treesitter.configs')
+    local treesitter = require('nvim-treesitter')
 
-    treesitter_config.setup(options)
+    treesitter.setup(options)
 end
 
 return M
